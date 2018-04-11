@@ -1,0 +1,17 @@
+.jumbotron{
+
+    background-image: url(../images/wallpaper.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+h1{
+    font-size: 20 px;
+    text-align: center;
+    text-shadow: 5px 5px white;
+
+}
+h2{
+    font-size: 10 px;
+    text-align: center;
+    text-shadow: 5px 5px white;
+}
