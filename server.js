@@ -16,10 +16,11 @@ var logger = require("morgan");
 var db = require("./models");
 mongoose.Promise = Promise;
 var databaseUrl = "mongodb://localhost/articlescraper"
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/articlescraper";
 mongoose.connect(MONGODB_URI, {
     useMongoClient: true
-  });
-  
+});
+
 
 var PORT = process.envPORT || 3000;
 
