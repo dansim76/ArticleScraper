@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li> <!-- need to fill this in and map to an html -->
-                    <li><a href="/saved">Saved Article</a></li> 
+                    <li><a href="/save">Saved Article</a></li> 
                     <li><form action="/scrape" method = "get"><button type="button" class="btn btn-default" id="scrape">Scrape New Articles</button></form></li><!-- need to fill this in and map to an html -->
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -39,7 +39,7 @@
     </nav>
     <div class = "jumbotron">
         <h1>Mongo Scraper</h1>
-        <h2> New York Times Edition</h2>
+        <h1 class="h2"> New York Times Edition</h1>
         
     </div>
     <div class = "showArticle">
@@ -49,7 +49,7 @@
 
 <div id="addnote">
 		<div id="note-displayer">
-			<h2>Note</h2>
+			<h3>Note</h3>
 			<h3>Article: <span id="article-title"></span></h3>
 			<div id="note">
 				<label for="note-title">Title</label><br>
@@ -86,7 +86,7 @@
     
     
     
-    <script src = "/public/javascript/app.js"></script>
+    <script src = "./javascript/app.js"></script>
     
 </body>
 </html>

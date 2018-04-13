@@ -3,21 +3,22 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var ArticlesSchema = new Schema({
-    headline : {
+    title : {
         type: String,
-        required: true
+        required: false
     },
     summary:{
         type: String,
-        required: true
+        required: false
     },
-    url:{
+    link:{
         type: String,
-        required: true
+        required: false
     },
     img:{
         type: String,
-        default: "/public/images/unavailable.jpg"
+        default: "./public/images/unavailable.jpg",
+        required: false
     },
     issaved: {
         type:Boolean,
@@ -25,7 +26,7 @@ var ArticlesSchema = new Schema({
     },
     status: {
         type: String,
-        default: "save article"
+        default: "Save Article"
     },
     created: {
         type: Date,
